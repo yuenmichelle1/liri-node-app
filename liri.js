@@ -8,45 +8,49 @@ var client = new Twitter(keys.twitter);
 var request = require('request');
 var omdb= keys.omdb.apikey;
 var fs = require("fs");
-
 var command = process.argv[2];
 
-switch (command){
-    case "my-tweets":
-        //show your last 20 tweets
-       showTweets();
-        break;
-    case "spotify-this-song":
-        var song= process.argv.slice(3).join(' ');
-        console.log(song); 
-        spotifyLogic(song);   
-        break;
-    case "movie-this":
-        var movieTitle= process.argv.slice(3).join(' ');
-        var queryUrl =`http://www.omdbapi.com/?apikey=${omdb}&t=${movieTitle}&limit=1`;       
-        if (movieTitle === ""){
-            console.log(`Movie not entered so I picked one for you!`);
-            request(`http://www.omdbapi.com/?apikey=${omdb}&t=mr+nobody&limit=1`, function (error, response, body) {
-            var mrNobodyobj = JSON.parse(body);
-            showMovieInfo(mrNobodyobj);
-          });
-        } else {
-            console.log(`Here is the first movie when searching for "${movieTitle}"`);
-            request(queryUrl, function (error, response, body) {
-                var obj = JSON.parse(body);
-                showMovieInfo(obj);
-              });
-        }
-        break;
-    case "do-what-it-says":
-        fs.readFile("random.txt", "utf8", function(err,data){
-            if (err){
-                console.log(err);
-            } 
-            var songFS = data.split(",")[1];
-            spotifyLogic(songFS);
-        })
+function doCommand(){
+    switch (command){
+        case "my-tweets":
+            showTweets();
+            break;
+        case "spotify-this-song":
+            var song= process.argv.slice(3).join(' ');
+            spotifyLogic(song);   
+            break;
+        case "movie-this":
+           movieDisplay();
+            break;
+        case "do-what-it-says":
+            fs.readFile("random.txt", "utf8", function(err,data){
+                if (err){
+                    console.log(err);
+                } 
+                var songFS = data.split(",")[1];
+                spotifyLogic(songFS);
+            })
 
+    }
+}
+
+
+function showTweets(){
+    var params = {
+        screen_name: 'thug_dev_life',
+        count: 20
+    };
+    client.get('statuses/user_timeline', params, function(error, tweets, response) {
+      if (!error) {
+        console.log('These were my last 20 tweets');  
+        for (var i=0; i< tweets.length; i++){
+            console.log(`_______________________________________________________` );
+            console.log(`${i+1}: ${tweets[i].text}`);
+        }
+      } else {
+          console.log(error);
+      }
+    });
 }
 
 function spotifyLogic(userSong){
@@ -80,6 +84,24 @@ function showSongInfo(response){
     console.log(`__________________________________________________________`);
 }
 
+function movieDisplay(){
+    var movieTitle= process.argv.slice(3).join(' ');
+    var queryUrl =`http://www.omdbapi.com/?apikey=${omdb}&t=${movieTitle}&limit=1`;       
+    if (movieTitle === ""){
+        console.log(`Movie not entered so I picked one for you!`);
+        request(`http://www.omdbapi.com/?apikey=${omdb}&t=mr+nobody&limit=1`, function (error, response, body) {
+        var mrNobodyobj = JSON.parse(body);
+        showMovieInfo(mrNobodyobj);
+    });
+    } else {
+        console.log(`Here is the first movie when searching for "${movieTitle}"`);
+        request(queryUrl, function (error, response, body) {
+            var obj = JSON.parse(body);
+            showMovieInfo(obj);
+        });
+    }
+}
+
 function showMovieInfo(dataObj){
     console.log(`__________________________________________________________`);
     console.log(`Title: ${dataObj.Title}`);
@@ -93,21 +115,5 @@ function showMovieInfo(dataObj){
     console.log(`__________________________________________________________`);
 }
 
-function showTweets(){
-    var params = {
-        screen_name: 'thug_dev_life',
-        count: 20
-    };
-    client.get('statuses/user_timeline', params, function(error, tweets, response) {
-      if (!error) {
-        console.log('These were my last 20 tweets');  
-        for (var i=0; i< tweets.length; i++){
-            console.log(`_______________________________________________________` );
-            console.log(`${i+1}: ${tweets[i].text}`);
-        }
-      } else {
-          console.log(error);
-      }
-    });
-}
 
+doCommand();
