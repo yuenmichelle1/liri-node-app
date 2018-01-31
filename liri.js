@@ -7,56 +7,19 @@ var spotify = new Spotify(keys.spotify);
 var client = new Twitter(keys.twitter);
 var request = require('request');
 var omdb= keys.omdb.apikey;
+var fs = require("fs");
 
-
-
-// commands
-
-// * `movie-this`// default is Mr. Nobody
-
-// * `do-what-it-says`
 var command = process.argv[2];
 
 switch (command){
     case "my-tweets":
         //show your last 20 tweets
-        var params = {
-            screen_name: 'thug_dev_life',
-            count: 20
-        };
-        client.get('statuses/user_timeline', params, function(error, tweets, response) {
-          if (!error) {
-            console.log('These were my last 20 tweets');  
-            for (var i=0; i< tweets.length; i++){
-                console.log(`_______________________________________________________` );
-                console.log(`${i+1}: ${tweets[i].text}`);
-            }
-          } else {
-              console.log(error);
-          }
-        });
+       showTweets();
         break;
     case "spotify-this-song":
-        var userSong = process.argv.slice(3).join(' ');
-        console.log(userSong); 
-        if (userSong == ""){
-            spotify
-            .search({ type: 'track', query: `The Sign Ace Of Base`, limit: 1})
-            .then(function(response) {
-                console.log(`Song not entered so I picked one for you!`);
-                showSongInfo(response);
-                })
-        }else{
-            spotify
-            .search({ type: 'track', query: userSong, limit: 1})
-            .then(function(response) {
-                console.log(`Here is the first song when searching for "${userSong}"`);
-                showSongInfo(response);
-            })
-            .catch(function(err) {
-               console.log(err);
-            });
-        }    
+        var song= process.argv.slice(3).join(' ');
+        console.log(song); 
+        spotifyLogic(song);   
         break;
     case "movie-this":
         var movieTitle= process.argv.slice(3).join(' ');
@@ -76,10 +39,37 @@ switch (command){
         }
         break;
     case "do-what-it-says":
-        console.log("do what i say"); 
+        fs.readFile("random.txt", "utf8", function(err,data){
+            if (err){
+                console.log(err);
+            } 
+            var songFS = data.split(",")[1];
+            spotifyLogic(songFS);
+        })
 
 }
 
+function spotifyLogic(userSong){
+    if (userSong == ""){
+        spotify
+        .search({ type: 'track', query: `The Sign Ace Of Base`, limit: 1})
+        .then(function(response) {
+            console.log(`Song not entered so I picked one for you!`);
+            showSongInfo(response);
+            })
+    }else{
+        spotify
+        .search({ type: 'track', query: userSong, limit: 1})
+        .then(function(response) {
+            console.log(`Here is the first song when searching for "${userSong}"`);
+            showSongInfo(response);
+        })
+        .catch(function(err) {
+           console.log(err);
+        });
+    }   
+
+}
 
 function showSongInfo(response){
     console.log(`______________________________________________________`);
@@ -95,10 +85,29 @@ function showMovieInfo(dataObj){
     console.log(`Title: ${dataObj.Title}`);
     console.log(`Year Released: ${dataObj.Year}`);
     console.log(`IMDB Rating: ${dataObj.imdbRating}`);
-    // console.log(`Rotten Tomatoes Score: ${body.Ratings[1].Value}`);
+    console.log(`Rotten Tomatoes Score: ${dataObj.Ratings[1].Value}`);
     console.log(`Movie was produced in : ${dataObj.Country}`);
     console.log(`Language: ${dataObj.Language}`);
     console.log(`Plot: ${dataObj.Plot}`);
     console.log(`Actors: ${dataObj.Actors}`);
     console.log(`__________________________________________________________`);
 }
+
+function showTweets(){
+    var params = {
+        screen_name: 'thug_dev_life',
+        count: 20
+    };
+    client.get('statuses/user_timeline', params, function(error, tweets, response) {
+      if (!error) {
+        console.log('These were my last 20 tweets');  
+        for (var i=0; i< tweets.length; i++){
+            console.log(`_______________________________________________________` );
+            console.log(`${i+1}: ${tweets[i].text}`);
+        }
+      } else {
+          console.log(error);
+      }
+    });
+}
+
