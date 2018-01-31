@@ -27,8 +27,8 @@ switch (command){
         if (movieTitle === ""){
             console.log(`Movie not entered so I picked one for you!`);
             request(`http://www.omdbapi.com/?apikey=${omdb}&t=mr+nobody&limit=1`, function (error, response, body) {
-            var obj = JSON.parse(body);
-            showMovieInfo(obj);
+            var mrNobodyobj = JSON.parse(body);
+            showMovieInfo(mrNobodyobj);
           });
         } else {
             console.log(`Here is the first movie when searching for "${movieTitle}"`);
