@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/yuenmichelle1/liri-node-app#readme",
   "dependencies": {
-    "node-spotify-api": "^1.0.7"
+    "dotenv": "^5.0.0",
+    "node-spotify-api": "^1.0.7",
+    "twitter": "^1.7.1"
   }
 }
