@@ -1,0 +1,20 @@
+Logged Information for request : spotify-this-song sweet home alabama 
+Here is the first song when searching for "sweet home alabama"
+______________________________________________________
+Artist:  Lynyrd Skynyrd
+Name of Song: Sweet Home Alabama
+Check out the song here : https://open.spotify.com/track/7e89621JPkKaeDSTQ3avtg
+Album: Second Helping
+__________________________________________________________
+Here is the first movie when searching for "sweet home alabama"
+Logged Information for request : movie-this sweet home alabama 
+__________________________________________________________
+Title: Sweet Home Alabama
+Year Released: 2002
+IMDB Rating: 6.2
+Rotten Tomatoes Score: 38%
+Movie was produced in : USA
+Language: English
+Plot: A young woman who's reinvented herself as a New York socialite must return home to Alabama to obtain a divorce from her husband, after seven years of separation.
+Actors: Reese Witherspoon, Josh Lucas, Patrick Dempsey, Candice Bergen
+__________________________________________________________

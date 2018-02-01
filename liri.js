@@ -11,6 +11,7 @@ var fs = require("fs");
 var command = process.argv[2];
 
 
+
 function doCommand(){
     switch (command){
         case "my-tweets":
@@ -33,6 +34,7 @@ function doCommand(){
             })
 
     }
+    logger.logCommand(process.argv.slice(2).join(' '));
 }
 
 
@@ -43,15 +45,16 @@ function showTweets(){
     };
     client.get('statuses/user_timeline', params, function(error, tweets, response) {
       if (!error) {
-        console.log('These were my last 20 tweets');  
+        logger.log('These were my last 20 tweets');  
         for (var i=0; i< tweets.length; i++){
-            console.log(`_______________________________________________________` );
-            console.log(`${i+1}: ${tweets[i].text}`);
+            logger.log(`_______________________________________________________` );
+            logger.log(`${i+1}: ${tweets[i].text}`);
         }
       } else {
           console.log(error);
       }
     });
+
 }
 
 function spotifyLogic(userSong){
@@ -59,14 +62,14 @@ function spotifyLogic(userSong){
         spotify
         .search({ type: 'track', query: `The Sign Ace Of Base`, limit: 1})
         .then(function(response) {
-            console.log(`Song not entered so I picked one for you!`);
+            logger.log(`Song not entered so I picked one for you!`);
             showSongInfo(response);
             })
     }else{
         spotify
         .search({ type: 'track', query: userSong, limit: 1})
         .then(function(response) {
-            console.log(`Here is the first song when searching for "${userSong}"`);
+            logger.log(`Here is the first song when searching for "${userSong}"`);
             showSongInfo(response);
         })
         .catch(function(err) {
@@ -77,25 +80,25 @@ function spotifyLogic(userSong){
 }
 
 function showSongInfo(response){
-    console.log(`______________________________________________________`);
-    console.log(`Artist:  ${response.tracks.items[0].artists[0].name}`);
-    console.log(`Name of Song: ${response.tracks.items[0].name}`);
-    console.log(`Check out the song here : ${response.tracks.items[0].external_urls.spotify}`);
-    console.log(`Album: ${response.tracks.items[0].album.name}`)
-    console.log(`__________________________________________________________`);
+    logger.log(`______________________________________________________`);
+    logger.log(`Artist:  ${response.tracks.items[0].artists[0].name}`);
+    logger.log(`Name of Song: ${response.tracks.items[0].name}`);
+    logger.log(`Check out the song here : ${response.tracks.items[0].external_urls.spotify}`);
+    logger.log(`Album: ${response.tracks.items[0].album.name}`)
+    logger.log(`__________________________________________________________`);
 }
 
 function movieDisplay(){
     var movieTitle= process.argv.slice(3).join(' ');
     var queryUrl =`http://www.omdbapi.com/?apikey=${omdb}&t=${movieTitle}&limit=1`;       
     if (movieTitle === ""){
-        console.log(`Movie not entered so I picked one for you!`);
+        logger.log(`Movie not entered so I picked one for you!`);
         request(`http://www.omdbapi.com/?apikey=${omdb}&t=mr+nobody&limit=1`, function (error, response, body) {
         var mrNobodyobj = JSON.parse(body);
         showMovieInfo(mrNobodyobj);
     });
     } else {
-        console.log(`Here is the first movie when searching for "${movieTitle}"`);
+        logger.log(`Here is the first movie when searching for "${movieTitle}"`);
         request(queryUrl, function (error, response, body) {
             var obj = JSON.parse(body);
             showMovieInfo(obj);
@@ -104,17 +107,31 @@ function movieDisplay(){
 }
 
 function showMovieInfo(dataObj){
-    console.log(`__________________________________________________________`);
-    console.log(`Title: ${dataObj.Title}`);
-    console.log(`Year Released: ${dataObj.Year}`);
-    console.log(`IMDB Rating: ${dataObj.imdbRating}`);
-    console.log(`Rotten Tomatoes Score: ${dataObj.Ratings[1].Value}`);
-    console.log(`Movie was produced in : ${dataObj.Country}`);
-    console.log(`Language: ${dataObj.Language}`);
-    console.log(`Plot: ${dataObj.Plot}`);
-    console.log(`Actors: ${dataObj.Actors}`);
-    console.log(`__________________________________________________________`);
+    logger.log(`__________________________________________________________`);
+    logger.log(`Title: ${dataObj.Title}`);
+    logger.log(`Year Released: ${dataObj.Year}`);
+    logger.log(`IMDB Rating: ${dataObj.imdbRating}`);
+    logger.log(`Rotten Tomatoes Score: ${dataObj.Ratings[1].Value}`);
+    logger.log(`Movie was produced in : ${dataObj.Country}`);
+    logger.log(`Language: ${dataObj.Language}`);
+    logger.log(`Plot: ${dataObj.Plot}`);
+    logger.log(`Actors: ${dataObj.Actors}`);
+    logger.log(`__________________________________________________________`);
 }
 
+const logger = {
+    log: function (statement) {
+        console.log(statement);
+        fs.appendFile("log.txt", statement + "\n" , function (err) {
+            if (err)
+                return console.log(err);
+        });
+    },
+    logCommand: function (userCommand) {
+        fs.appendFile("log.txt", `Logged Information for request : ${userCommand} \n`, (err) => {
+            if (err) throw err;
+          });
+    }
+};
 
 doCommand();
