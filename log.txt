@@ -16,3 +16,79 @@ Name of Song: I Want It That Way
 Check out the song here : https://open.spotify.com/track/6e40mgJiCid5HRAGrbpGA6
 __________________________________________________________
 Album: The Hits--Chapter One
+Here is the first movie when searching for "sweet home alabama"
+2018-02-01T01:51:36-06:00 
+ Logged Information for request : movie-this sweet home alabama 
+__________________________________________________________
+Title: Sweet Home Alabama
+Year Released: 2002
+IMDB Rating: 6.2
+Rotten Tomatoes Score: 38%
+Movie was produced in : USA
+Language: English
+Plot: A young woman who's reinvented herself as a New York socialite must return home to Alabama to obtain a divorce from her husband, after seven years of separation.
+Actors: Reese Witherspoon, Josh Lucas, Patrick Dempsey, Candice Bergen
+__________________________________________________________
+2018-02-01T09:12:02-06:00 
+ Logged Information for request : do-what-it-says 
+Here is the first song when searching for ""I Want it That Way""
+______________________________________________________
+Artist:  Backstreet Boys
+Name of Song: I Want It That Way
+Check out the song here : https://open.spotify.com/track/6e40mgJiCid5HRAGrbpGA6
+Album: The Hits--Chapter One
+__________________________________________________________
+2018-02-01T09:15:06-06:00 
+ Logged Information for request : my-tweets 
+These were my last 20 tweets
+_______________________________________________________
+1: twitter is cool
+_______________________________________________________
+2: @ASOS_Heretohelp, how long should i wait for an API key? #IsThisHowYouRequestAKeyNow?
+_______________________________________________________
+3: oh foo...ey
+_______________________________________________________
+4: github :  the social coding network
+_______________________________________________________
+5: RT @dev_humor: *Dabs* https://t.co/YgPL7cusAw
+_______________________________________________________
+6: &lt;/war&gt;
+_______________________________________________________
+7: i've always put 
+var myHeart = {
+            key: love
+} 
+
+in global scope for everyone to see...maybe i should move it to a function...
+_______________________________________________________
+8: word to the wise: 
+#wife {
+     right: 100%;
+     margin: 0;
+}
+_______________________________________________________
+9: ["hip", "hip"]
+_______________________________________________________
+10: true gentlemen programmers don't see women as objects. they consider each lady to be a class of her own
+_______________________________________________________
+11: 3 Database SQL walked into a NoSQL bar, a little while later..they walked out. Because they couldnt find a table
+_______________________________________________________
+12: if you dont get arrays, you dont get a raise
+_______________________________________________________
+13: I discovered this cool new place.. The Foo Bar. so many servers
+_______________________________________________________
+14: what is the object-oriented way to be wealthy? 
+
+--- Inheritance
+_______________________________________________________
+15: you can try and catch errors or you can throw up
+_______________________________________________________
+16: """""""""""""""""""""""""""""""""""""" would be a crazy string
+_______________________________________________________
+17: i need 20 tweets
+_______________________________________________________
+18: RT @dev_humor: My experience using #OAuth2 so far https://t.co/5Mwo28JyUu #devhumor https://t.co/V5M0PfrS7G
+_______________________________________________________
+19: node is written in c=c+1 (but shorthand form) ? mind. blown.
+_______________________________________________________
+20: I only do it for the cookies
