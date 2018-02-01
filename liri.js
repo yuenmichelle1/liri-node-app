@@ -9,6 +9,8 @@ var request = require('request');
 var omdb= keys.omdb.apikey;
 var fs = require("fs");
 var command = process.argv[2];
+var moment = require('moment');
+var timeStamp = moment().format();
 
 
 
@@ -128,7 +130,7 @@ const logger = {
         });
     },
     logCommand: function (userCommand) {
-        fs.appendFile("log.txt", `Logged Information for request : ${userCommand} \n`, (err) => {
+        fs.appendFile("log.txt", `${timeStamp} \n Logged Information for request : ${userCommand} \n`, (err) => {
             if (err) throw err;
           });
     }

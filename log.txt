@@ -1,20 +1,19 @@
-Logged Information for request : spotify-this-song sweet home alabama 
-Here is the first song when searching for "sweet home alabama"
-______________________________________________________
-Artist:  Lynyrd Skynyrd
-Name of Song: Sweet Home Alabama
-Check out the song here : https://open.spotify.com/track/7e89621JPkKaeDSTQ3avtg
-Album: Second Helping
+Here is the first movie when searching for "lizzie mcquire"
+2018-02-01T01:06:37-06:00 
+ Logged Information for request : movie-this lizzie mcquire 
+Here is the first movie when searching for "lizzie mcguire"
+2018-02-01T01:06:55-06:00 
+ Logged Information for request : movie-this lizzie mcguire 
+Movie not entered so I picked one for you!
+2018-02-01T01:07:16-06:00 
+ Logged Information for request : movie-this 
 __________________________________________________________
-Here is the first movie when searching for "sweet home alabama"
-Logged Information for request : movie-this sweet home alabama 
-__________________________________________________________
-Title: Sweet Home Alabama
-Year Released: 2002
-IMDB Rating: 6.2
-Rotten Tomatoes Score: 38%
-Movie was produced in : USA
-Language: English
-Plot: A young woman who's reinvented herself as a New York socialite must return home to Alabama to obtain a divorce from her husband, after seven years of separation.
-Actors: Reese Witherspoon, Josh Lucas, Patrick Dempsey, Candice Bergen
+Title: Mr. Nobody
+Year Released: 2009
+IMDB Rating: 7.9
+Rotten Tomatoes Score: 66%
+Movie was produced in : Belgium, Germany, Canada, France, USA, UK
+Language: English, Mohawk
+Plot: A boy stands on a station platform as a train is about to leave. Should he go with his mother or stay with his father? Infinite possibilities arise from this decision. As long as he doesn't choose, anything is possible.
+Actors: Jared Leto, Sarah Polley, Diane Kruger, Linh Dan Pham
 __________________________________________________________
