@@ -10,6 +10,7 @@ var omdb= keys.omdb.apikey;
 var fs = require("fs");
 var command = process.argv[2];
 
+
 function doCommand(){
     switch (command){
         case "my-tweets":
