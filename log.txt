@@ -92,3 +92,31 @@ _______________________________________________________
 19: node is written in c=c+1 (but shorthand form) ? mind. blown.
 _______________________________________________________
 20: I only do it for the cookies
+2018-02-01T19:05:51-06:00 
+ Logged Information for request : do-what-it-says 
+Here is the first song when searching for ""I Want it That Way""
+______________________________________________________
+Artist:  Backstreet Boys
+Name of Song: I Want It That Way
+Check out the song here : https://open.spotify.com/track/6e40mgJiCid5HRAGrbpGA6
+Album: The Hits--Chapter One
+__________________________________________________________
+2018-02-01T19:06:01-06:00 
+ Logged Information for request : spotify-this-song 
+Song not entered so I picked one for you!
+______________________________________________________
+Artist:  Ace of Base
+Name of Song: The Sign
+Check out the song here : https://open.spotify.com/track/0hrBpAOgrt8RXigk83LLNE
+Album: The Sign (US Album) [Remastered]
+__________________________________________________________
+
+ 2018-02-01T21:39:53-06:00 
+ Logged Information for request : spotify-this-song so what 
+Here is the first song when searching for "so what"
+______________________________________________________
+Artist:  P!nk
+Name of Song: So What
+Check out the song here : https://open.spotify.com/track/6qYGUxPjQt5PJtWdiNppZx
+Album: Funhouse
+__________________________________________________________
