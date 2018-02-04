@@ -120,3 +120,171 @@ Name of Song: So What
 Check out the song here : https://open.spotify.com/track/6qYGUxPjQt5PJtWdiNppZx
 Album: Funhouse
 __________________________________________________________
+
+ 2018-02-02T16:39:40-06:00 
+ Logged Information for request : spotify-this-song 
+Song not entered so I picked one for you!
+______________________________________________________
+Artist:  Ace of Base
+Name of Song: The Sign
+Check out the song here : https://open.spotify.com/track/0hrBpAOgrt8RXigk83LLNE
+Album: The Sign (US Album) [Remastered]
+__________________________________________________________
+Here is the first movie when searching for "pitch perfect"
+
+ 2018-02-02T16:40:01-06:00 
+ Logged Information for request : movie-this pitch perfect 
+__________________________________________________________
+Title: Pitch Perfect
+Year Released: 2012
+IMDB Rating: 7.2
+Rotten Tomatoes Score: 80%
+Movie was produced in : USA
+Language: English
+Plot: Beca, a freshman at Barden University, is cajoled into joining The Bellas, her school's all-girls singing group. Injecting some much needed energy into their repertoire, The Bellas take on their male rivals in a campus competition.
+Actors: Anna Kendrick, Skylar Astin, Ben Platt, Brittany Snow
+__________________________________________________________
+
+ 2018-02-03T21:41:35-06:00 
+ Logged Information for request : my-tweets 
+These were my last 20 tweets
+_______________________________________________________
+1: twitter is cool created at Wed Jan 31 15:47:27 +0000 2018
+_______________________________________________________
+2: @ASOS_Heretohelp, how long should i wait for an API key? #IsThisHowYouRequestAKeyNow? created at Wed Jan 31 15:36:30 +0000 2018
+_______________________________________________________
+3: oh foo...ey created at Wed Jan 31 15:29:54 +0000 2018
+_______________________________________________________
+4: github :  the social coding network created at Wed Jan 31 15:16:43 +0000 2018
+_______________________________________________________
+5: RT @dev_humor: *Dabs* https://t.co/YgPL7cusAw created at Wed Jan 31 15:12:51 +0000 2018
+_______________________________________________________
+6: &lt;/war&gt; created at Wed Jan 31 08:04:52 +0000 2018
+_______________________________________________________
+7: i've always put 
+var myHeart = {
+            key: love
+} 
+
+in global scope for everyone to see...maybe i should move it to a function... created at Wed Jan 31 07:58:47 +0000 2018
+_______________________________________________________
+8: word to the wise: 
+#wife {
+     right: 100%;
+     margin: 0;
+} created at Wed Jan 31 07:51:48 +0000 2018
+_______________________________________________________
+9: ["hip", "hip"] created at Wed Jan 31 07:49:04 +0000 2018
+_______________________________________________________
+10: true gentlemen programmers don't see women as objects. they consider each lady to be a class of her own created at Wed Jan 31 07:48:18 +0000 2018
+_______________________________________________________
+11: 3 Database SQL walked into a NoSQL bar, a little while later..they walked out. Because they couldnt find a table created at Wed Jan 31 07:46:05 +0000 2018
+_______________________________________________________
+12: if you dont get arrays, you dont get a raise created at Wed Jan 31 07:43:16 +0000 2018
+_______________________________________________________
+13: I discovered this cool new place.. The Foo Bar. so many servers created at Wed Jan 31 07:42:50 +0000 2018
+_______________________________________________________
+14: what is the object-oriented way to be wealthy? 
+
+--- Inheritance created at Wed Jan 31 07:41:35 +0000 2018
+_______________________________________________________
+15: you can try and catch errors or you can throw up created at Wed Jan 31 07:39:10 +0000 2018
+_______________________________________________________
+16: """""""""""""""""""""""""""""""""""""" would be a crazy string created at Wed Jan 31 07:35:21 +0000 2018
+_______________________________________________________
+17: i need 20 tweets created at Wed Jan 31 07:33:20 +0000 2018
+_______________________________________________________
+_______________________________________________________
+18: RT @dev_humor: My experience using #OAuth2 so far https://t.co/5Mwo28JyUu #devhumor https://t.co/V5M0PfrS7G created at Wed Jan 31 07:32:17 +0000 2018
+19: node is written in c=c+1 (but shorthand form) ? mind. blown. created at Wed Jan 31 07:30:43 +0000 2018
+_______________________________________________________
+20: I only do it for the cookies created at Tue Jan 30 01:34:55 +0000 2018
+
+ 2018-02-03T21:42:43-06:00 
+ Logged Information for request : spotify-this=song 
+
+ 2018-02-03T21:43:12-06:00 
+ Logged Information for request : my-tweets 
+These were my last 20 tweets
+_______________________________________________________
+1: twitter is cool created at Wed Jan 31 15:47:27 +0000 2018
+_______________________________________________________
+2: @ASOS_Heretohelp, how long should i wait for an API key? #IsThisHowYouRequestAKeyNow? created at Wed Jan 31 15:36:30 +0000 2018
+_______________________________________________________
+3: oh foo...ey created at Wed Jan 31 15:29:54 +0000 2018
+_______________________________________________________
+4: github :  the social coding network created at Wed Jan 31 15:16:43 +0000 2018
+_______________________________________________________
+5: RT @dev_humor: *Dabs* https://t.co/YgPL7cusAw created at Wed Jan 31 15:12:51 +0000 2018
+_______________________________________________________
+6: &lt;/war&gt; created at Wed Jan 31 08:04:52 +0000 2018
+_______________________________________________________
+7: i've always put 
+var myHeart = {
+            key: love
+} 
+
+in global scope for everyone to see...maybe i should move it to a function... created at Wed Jan 31 07:58:47 +0000 2018
+_______________________________________________________
+8: word to the wise: 
+#wife {
+     right: 100%;
+     margin: 0;
+} created at Wed Jan 31 07:51:48 +0000 2018
+_______________________________________________________
+9: ["hip", "hip"] created at Wed Jan 31 07:49:04 +0000 2018
+_______________________________________________________
+10: true gentlemen programmers don't see women as objects. they consider each lady to be a class of her own created at Wed Jan 31 07:48:18 +0000 2018
+_______________________________________________________
+11: 3 Database SQL walked into a NoSQL bar, a little while later..they walked out. Because they couldnt find a table created at Wed Jan 31 07:46:05 +0000 2018
+_______________________________________________________
+12: if you dont get arrays, you dont get a raise created at Wed Jan 31 07:43:16 +0000 2018
+_______________________________________________________
+13: I discovered this cool new place.. The Foo Bar. so many servers created at Wed Jan 31 07:42:50 +0000 2018
+_______________________________________________________
+14: what is the object-oriented way to be wealthy? 
+
+--- Inheritance created at Wed Jan 31 07:41:35 +0000 2018
+_______________________________________________________
+15: you can try and catch errors or you can throw up created at Wed Jan 31 07:39:10 +0000 2018
+_______________________________________________________
+16: """""""""""""""""""""""""""""""""""""" would be a crazy string created at Wed Jan 31 07:35:21 +0000 2018
+_______________________________________________________
+17: i need 20 tweets created at Wed Jan 31 07:33:20 +0000 2018
+_______________________________________________________
+18: RT @dev_humor: My experience using #OAuth2 so far https://t.co/5Mwo28JyUu #devhumor https://t.co/V5M0PfrS7G created at Wed Jan 31 07:32:17 +0000 2018
+_______________________________________________________
+19: node is written in c=c+1 (but shorthand form) ? mind. blown. created at Wed Jan 31 07:30:43 +0000 2018
+_______________________________________________________
+20: I only do it for the cookies created at Tue Jan 30 01:34:55 +0000 2018
+
+ 2018-02-03T21:43:33-06:00 
+ Logged Information for request : spotify-this-song 
+Song not entered so I picked one for you!
+______________________________________________________
+Artist:  Ace of Base
+Name of Song: The Sign
+Check out the song here : https://open.spotify.com/track/0hrBpAOgrt8RXigk83LLNE
+Album: The Sign (US Album) [Remastered]
+__________________________________________________________
+Movie not entered so I picked one for you!
+
+ 2018-02-03T21:45:08-06:00 
+ Logged Information for request : movie-this 
+__________________________________________________________
+Title: Mr. Nobody
+Year Released: 2009
+IMDB Rating: 7.9
+Rotten Tomatoes Score: 66%
+Movie was produced in : Belgium, Germany, Canada, France, USA, UK
+Language: English, Mohawk
+Plot: A boy stands on a station platform as a train is about to leave. Should he go with his mother or stay with his father? Infinite possibilities arise from this decision. As long as he doesn't choose, anything is possible.
+Actors: Jared Leto, Sarah Polley, Diane Kruger, Linh Dan Pham
+__________________________________________________________
+
+ 2018-02-03T21:45:34-06:00 
+ Logged Information for request : spotify this song 
+Not a valid command
+
+ 2018-02-03T21:45:56-06:00 
+ Logged Information for request : movie 
